@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery.charcount example</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="../jquery.charcount.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#test1').charcount();
+				
+				$('#test2,#test4,#test5,#test6,#test7').charcount({
+					maxLength: 40,
+					position: 'after'
+				});
+				
+				$('#test3,#test8').charcount({
+					maxLength: 16,
+					position: 'after',
+					preventOverage: false
+				});
+				
+				$('.countable').bind('update', function(evt, length, remaining) {
+					var message = 'id=' + $(evt.target).attr('id') + ', length=' + length + ', remaining=' + remaining;
+					var logger = $('#logger');
+					logger.val(logger.val() + message + '\n');
+				});
+								
+				//for demo
+				$('.clear-debug').click(function(evt) {
+					evt.preventDefault();
+					$('#logger').val('');
+				});
+				
+				$('.reset-demo').click(function(evt) {
+					evt.preventDefault();
+					$('textarea,input').val('').trigger('charcount');
+					$('.clear-debug').click();
+				});
+			});
+		</script>
+		<style>
+			html { margin: 0; body: 0; }
+			body { margin: 10px; padding: 0; font-family: sans-serif; font-size: 12px; color: #333; }
+			h1 { font-size: 20px; margin: 0 0 10px 0; padding: 0; }
+			textarea { width: 400px; height: 100px; } 
+			input { width: 200px; }
+			textarea, input { margin: 0; display: block; }
+			div { margin: 10px 0; padding: 10px; border: 1px solid #ccc; width: 450px; }
+			
+			.demo { margin: 0 auto; padding: 0; border: 0; width: 960px; position: relative; }
+			
+			.debug { position: fixed; right: 50%; top: 10px; margin: 0 -475px 0 0; }
+			.debug textarea { width: 443px; height: 500px; }
+			.clear-debug { position: absolute; top: 15px; right: 12px; }
+			
+			.charcount-display { display: block; margin: 0 0 3px 0; }
+			.charcount-position-after { margin: 3px 0 0 0; }
+			.charcount-overage { color: #c00; }
+		</style>
+	</head>
+	<body>	
+		<div class="demo">	
+			<div>
+				<h1>textarea</h1>
+				<textarea id="test1" class="countable"></textarea>
+			</div>
+				
+			<div>
+				<h1>input[type="text"]</h1>
+				<input id="test2" type="text" class="countable" />
+			</div>
+					
+			<div>
+				<h1>input[type="password"]</h1>
+				<input id="test3" type="password" class="countable" />
+			</div>
+			
+			<div>
+				<h1>input[type="email"]</h1>
+				<input id="test4" type="email" class="countable" />
+			</div>
+			
+			<div>
+				<h1>input[type="url"]</h1>
+				<input id="test5" type="url" class="countable" />
+			</div>
+			
+			<div>
+				<h1>input[type="search"]</h1>
+				<input id="test6" type="search" class="countable" />
+			</div>
+			
+			<div>
+				<h1>textarea (with <em>maxlength</em>)</h1>
+				<textarea id="test7" class="countable" maxlength="50"></textarea>
+			</div>
+			
+			<div>
+				<h1>input[type="text"] (with <em>maxlength</em>)</h1>
+				<input id="test8" type="text" class="countable" maxlength="10" />
+			</div>
+			
+			<a class="reset-demo" href="#" title="reset">reset</a>
+			
+			<div class="debug">
+				<h1>debug</h1>
+				<a class="clear-debug" href="#" title="clear">clear</a>
+				<textarea id="logger" readonly="readonly"></textarea>
+			</div>
+		</div>
+	</body>
+</html>
