@@ -15,10 +15,10 @@ Quick Documentation
 
 **options:** A set of key/value pairs that configure settings for the plugin.  All options are optional.
 
-> **maxLength:** (type: [Integer](http://docs.jquery.com/Types#Integer), default: 250) Number of characters to limit the field to.
-> **position:** (type: [String](http://docs.jquery.com/Types#String), default: "before") Where to position the plugin feedback.  Available options are "before", "after", and "none".
-> **preventOverage:** (type: [Boolean](http://docs.jquery.com/Types#Boolean), default: true) If true, characters exceeding the set *maxLength* will be trimmed.
-> **classPrefix:** (type: [String](http://docs.jquery.com/Types#String), default: "charcount") This string is prefixed to all classes used by the plugin.
+* **maxLength:** (type: [Integer](http://docs.jquery.com/Types#Integer), default: 250) Number of characters to limit the field to.
+* **position:** (type: [String](http://docs.jquery.com/Types#String), default: "before") Where to position the plugin feedback.  Available options are "before", "after", and "none".
+* **preventOverage:** (type: [Boolean](http://docs.jquery.com/Types#Boolean), default: true) If true, characters exceeding the set *maxLength* will be trimmed.
+* **classPrefix:** (type: [String](http://docs.jquery.com/Types#String), default: "charcount") This string is prefixed to all classes used by the plugin.
 
 Events
 ------
