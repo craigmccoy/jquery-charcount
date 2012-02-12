@@ -9,7 +9,7 @@ A jQuery plugin for counting in character limits in text form elements.
 
 ## Live Demonstration ##
 
-Click <a href="http://craigmccoy.github.com/jquery-charcount/" target="_blank">here</a> to view a live demo.
+Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo.
 
 ---
 
