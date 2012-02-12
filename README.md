@@ -5,13 +5,11 @@ A jQuery plugin for counting in character limits in text form elements.
 * configurable maximum length
 * configurable user feedback (by position or custom callback)
 
----
 
 ## Live Demonstration ##
 
 Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo.
 
----
 
 ## Quick Documentation ##
 
@@ -24,7 +22,6 @@ Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo
 * **preventOverage:** (type: <a href="http://docs.jquery.com/Types#Boolean" target="_blank">Boolean</a>, default: true) If true, characters exceeding the set *maxLength* will be trimmed.
 * **classPrefix:** (type: <a href="http://docs.jquery.com/Types#String" target="_blank">String</a>, default: "charcount") This string is prefixed to all classes used by the plugin.
 
----
 
 ## Events ##
 
@@ -32,7 +29,6 @@ Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo
 
 **charcount:** Triggering this event will cause the plugin to update itself.
 
----
 
 ## Usage Example ##
 
