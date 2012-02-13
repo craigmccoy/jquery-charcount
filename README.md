@@ -11,7 +11,7 @@ Click [here](http://craigmccoy.github.com/jquery-charcount/ "craigmccoy/jquery-c
 
 ## Quick Documentation
 
-<code style="display: block;">$(*selector*).charcount(*options*);</code>
+<code><p>$(*selector*).charcount(*options*);</p></code>
 
 **options:** A set of key/value pairs that configure settings for the plugin.  All options are optional.
 
