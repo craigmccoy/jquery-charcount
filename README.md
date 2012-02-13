@@ -1,19 +1,17 @@
-# jQuery Character Count Plugin #
-
-A jQuery plugin for counting in character limits in text form elements.
+jquery.charcount.js is a jQuery plugin for counting character limits of text form elements.
 
 * configurable maximum length
 * configurable user feedback (by position or custom callback)
 
 
-## Live Demonstration ##
+### Live Demonstration
 
-Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo.
+Click [here](http://craigmccoy.github.com/jquery-charcount/ "craigmccoy/jquery-charcount") to view a live demo.
 
 
-## Quick Documentation ##
+### Quick Documentation
 
-``$(*selector*).charcount(*options*);``
+<code style="display: block;">$(*selector*).charcount(*options*);</code>
 
 **options:** A set of key/value pairs that configure settings for the plugin.  All options are optional.
 
@@ -23,14 +21,14 @@ Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo
 * **classPrefix:** (type: <a href="http://docs.jquery.com/Types#String" target="_blank">String</a>, default: "charcount") This string is prefixed to all classes used by the plugin.
 
 
-## Events ##
+### Events
 
-**update:** Triggered after every update to the character count.  The current character length and remaining character length (*maxLength* - current character length) are passed as additional arguments.
+**update:** Triggered after every update to an element's character count.  The current character length and remaining character length (*maxLength* - current character length) are provided as additional arguments.
 
-**charcount:** Triggering this event will cause the plugin to update itself.
+**charcount:** Triggering this event will cause the plugin to update the character count for the element.
 
 
-## Usage Example ##
+### Usage Example
 
 ```javascript
 $('#text').charcount({
