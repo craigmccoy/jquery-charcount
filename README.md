@@ -13,7 +13,9 @@ Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo
 
 ## Quick Documentation ##
 
-<code>$(*selector*).charcount(*options*);</code>
+```javascript
+$(*selector*).charcount(*options*);
+```
 
 **options:** A set of key/value pairs that configure settings for the plugin.  All options are optional.
 
@@ -32,14 +34,16 @@ Click [here](http://craigmccoy.github.com/jquery-charcount/) to view a live demo
 
 ## Usage Example ##
 
-	$('#text').charcount({
-		maxLength: 50,
-		position: 'after'
-	});
-	
-	//using event to provide feedback
-	$('#text').charcount({
-		position: 'none'
-	}).bind('charcount', function(evt, length, remaining)) { 
-		console.log('length: ' + length, 'remaining: ' + remaining);
-	});
+```javascript
+$('#text').charcount({
+	maxLength: 50,
+	position: 'after'
+});
+
+//using event to provide feedback
+$('#text').charcount({
+	position: 'none'
+}).bind('charcount', function(evt, length, remaining)) { 
+	console.log('length: ' + length, 'remaining: ' + remaining);
+});
+```
