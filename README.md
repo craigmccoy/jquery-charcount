@@ -4,12 +4,12 @@
 * configurable user feedback (by position or custom callback)
 
 
-### Live Demonstration
+## Live Demonstration
 
 Click [here](http://craigmccoy.github.com/jquery-charcount/ "craigmccoy/jquery-charcount") to view a live demo.
 
 
-### Quick Documentation
+## Quick Documentation
 
 <code style="display: block;">$(*selector*).charcount(*options*);</code>
 
@@ -21,14 +21,14 @@ Click [here](http://craigmccoy.github.com/jquery-charcount/ "craigmccoy/jquery-c
 * **classPrefix:** (type: <a href="http://docs.jquery.com/Types#String" target="_blank">String</a>, default: "charcount") This string is prefixed to all classes used by the plugin.
 
 
-### Events
+## Events
 
 **update:** Triggered after every update to an element's character count.  The current character length and remaining character length (*maxLength* - current character length) are provided as additional arguments.
 
 **charcount:** Triggering this event will cause the plugin to update the character count for the element.
 
 
-### Usage Example
+## Usage Example
 
 ```javascript
 $('#text').charcount({
